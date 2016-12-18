@@ -30,14 +30,24 @@ body {
 }
 
 .website-link,
-.website-link:visited {
-  color: #3498db;
-  text-decoration: none;
-}
-
+.website-link:visited,
 .website-link:hover,
 .website-link:focus,
 .website-link:active {
+  color: #95a5a6;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.website-link.active,
+.website-link.active:visited {
+  color: #3498db;
+}
+
+.website-link.active:hover,
+.website-link.active:focus,
+.website-link.active:active {
+  cursor: pointer;
   color: #3498db;
   text-decoration: underline;
 }

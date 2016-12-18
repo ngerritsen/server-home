@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('[data-relative-link]')
+  document.querySelectorAll('.js-link')
     .forEach(function (link) {
-      var relativeLink = link.getAttribute('data-relative-link');
-      link.href = location.origin + relativeLink;
+      var port = link.getAttribute('data-port');
+      var path = link.getAttribute('data-path');
+      var secure = link.getAttribute('data-secure');
+
+      link.href =
+        (secure ? 'https://' : 'http://') +
+        location.host +
+        (port ? ':' + port : '') +
+        (path ? path : '');
+
+      link.classList.add('active');
     });
 })

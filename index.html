@@ -11,10 +11,15 @@
     <h1 class="title">Server home</h1>
     <ul class="websites">
         <li class="website">
-            <a class="website-link" data-relative-link=":32400/web" href="#">Plex</a>
+            <a class="website-link js-link" data-port="32400" data-path="/web">Plex</a>
         </li>
+
         <li class="website">
-            <a class="website-link" data-relative-link=":8112" href="#">Deluge</a>
+            <a class="website-link js-link" data-port="8112">Deluge</a>
+        </li>
+
+        <li class="website">
+            <a class="website-link js-link" data-secure="true" data-port="10000">Webmin</a>
         </li>
     </ul>
     <p class="copyright">&copy; Niels Gerritsen 2016</p>
