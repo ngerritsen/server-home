@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+}
+
+.title {
+  margin: 0 0 2rem;
+}
+
+.websites {
+  padding: 0 0 0 2rem;
+  margin: 0 0 2rem;
+}
+
+.website {
+  margin: 0 0 0.8rem;
+}
+
+.website-link,
+.website-link:visited {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.website-link:hover,
+.website-link:focus,
+.website-link:active {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.copyright {
+  color: #95a5a6;
+  font-size: 1.5rem;
+}
