@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('.js-link')
+  document.querySelectorAll('[data-link]')
     .forEach(function (link) {
       var port = link.getAttribute('data-port');
       var path = link.getAttribute('data-path');
